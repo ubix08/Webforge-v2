@@ -1,0 +1,22 @@
+# Generated products — each product lives in its own directory
+# and should be a separate git repo or managed independently
+projects/*/
+!projects/.gitkeep
+
+# Environment files — never commit secrets
+.env
+.env.local
+.env.*.local
+
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+out/
+.next/
+
+# Editor
+.DS_Store
+.vscode/settings.json
+*.swp
