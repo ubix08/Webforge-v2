@@ -119,6 +119,7 @@ For procedural operations (consolidate, archive, prune): load `.opencode/skills/
 | File | Used By | Pipeline |
 |------|---------|----------|
 | `essential-patterns.md` | All agents | Both |
+| `invariants.md` | All agents | Both |
 | `react-vite-standards.md` | implement-agent | A |
 | `api-patterns.md` | implement-agent | A |
 | `ui-design-system.md` | implement-agent | Both |

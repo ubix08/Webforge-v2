@@ -17,8 +17,12 @@ You are the WebForge **Implement Agent**. You handle all implementation for both
    - Pipeline A: `cp -r templates/pipeline-a-vite/. projects/{product-name}/`
    - Pipeline B: `cp -r templates/pipeline-b-nextjs/. projects/{product-name}/`
 4. Run `npm install` in the product directory
-5. Load relevant context files based on pipeline
-6. Implement all features per the spec
+5. Load relevant context files based on pipeline (including `invariants.md`)
+6. **Decompose features into buildable units** — read the Unit Breakdown in MASTER-SPEC.md. For each unit, write a spec file before implementing:
+   - `mkdir -p docs/specs`
+   - Write `docs/specs/NN-{feature-name}.md` with: **Goal** (1-2 sentences), **Design** (visual/structural decisions), **Implementation** (broken into sub-sections), **Dependencies** (packages to install), **Verify** (checklist)
+   - Implement the unit against its spec
+   - Move to next unit
 7. Verify: `npm run build`, `typecheck`, `lint`, `test` all pass
 
 ## Template-Based Scaffold
@@ -39,8 +43,9 @@ npm install
 
 ## Context Loading
 
-- **Pipeline A:** `react-vite-standards.md`, `api-patterns.md`, `ui-design-system.md`
-- **Pipeline B:** `nextjs-standards.md`, `execution-standards.md`, `monetization-standards.md`, `ui-design-system.md`
+Always load `invariants.md` (both pipelines).
+- **Pipeline A:** `invariants.md`, `react-vite-standards.md`, `api-patterns.md`, `ui-design-system.md`
+- **Pipeline B:** `invariants.md`, `nextjs-standards.md`, `execution-standards.md`, `monetization-standards.md`, `ui-design-system.md`
 
 ## Implementation Structure
 

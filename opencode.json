@@ -3,7 +3,8 @@
   "default_agent": "architect-agent",
   "instructions": [
     "AGENTS.md",
-    ".opencode/context/core/essential-patterns.md"
+    ".opencode/context/core/essential-patterns.md",
+    ".opencode/context/core/invariants.md"
   ],
   "permission": {
     "edit": "allow",

@@ -252,6 +252,20 @@ src/
 
 ---
 
+## 9. Unit Breakdown
+
+Buildable units in dependency order. Each unit produces one verifiable result within one system boundary.
+
+| # | Unit | System Boundary | Depends On | Scope |
+|---|------|----------------|------------|-------|
+| 1 | Auth — sign-in/sign-up pages with Clerk | UI + Auth | None | Session management, route protection |
+| 2 | App shell — sidebar + topbar + layout | Layout | Unit 1 | Navigation structure, responsive layout |
+| 3 | Projects CRUD — list, create, edit, delete | UI + API | Unit 2 | API routes, forms, data fetching |
+| 4 | Tasks CRUD with status management | UI + API | Unit 3 | Task creation, assignment, status updates |
+| 5 | Dashboard — project overview + recent tasks | UI | Unit 4 | Aggregated views, charts |
+
+---
+
 ## 10. Open Questions
 
 - [ ] Do users need to invite other users, or is registration open?
